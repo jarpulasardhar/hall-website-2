@@ -1,0 +1,125 @@
+footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-size: clamp(0.7rem, 2vw, 1.1rem);
+    padding-block: 1.5rem 0.75rem;
+}
+footer h2, .footer, .ext-links{
+    margin-block-end: 1.5rem;
+}
+footer h2{
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+}
+.ext-links{
+    letter-spacing: 5px;
+}
+.ext-links ul{
+    list-style-type: none;
+    font-size: clamp(0.9rem, 3vw, 1.3rem);
+}
+.ext-links li+li{
+    margin-block-start: 1em;
+}
+.ext-links a{
+    color: white;
+    text-decoration: none;
+}
+:is(.ext-links) a:hover, a:focus{
+    text-decoration: underline;
+}
+.logo-and-name{
+    display: flex;
+    column-gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.social-media-contacts div+div{
+    margin-block-start: 0.75rem;
+}
+.social-media-icons ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5em;
+    list-style-type: none;
+    font-size: 1.75rem;
+}
+.social-media-icons i:hover{
+    color: red;
+}
+.social-media-icons .fa-linkedin-in{
+    color:#0A67C3;
+}
+.social-media-icons .fa-facebook-f{
+    color: #0B81EC;
+}
+.social-media-icons .fa-github{
+    color: white;
+}
+
+.copyright{
+    letter-spacing: 0.1em;
+}
+@media (min-width:51em) {
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-inline: 10vw;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .ext-links{
+        margin-block-end: 0;
+    }
+    .ext-links ul{
+        display: grid;
+        grid-template: "home gallery"
+                       "activities awards"
+                       "hcm contact" /
+                       185px 185px;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .ext-links li+li{
+        margin-block-start: 0;
+    }
+
+    .ext-links li:nth-child(1){
+        grid-area: home;
+    }
+    .ext-links li:nth-child(2){
+        grid-area: gallery;
+    }
+    .ext-links li:nth-child(3){
+        grid-area: activities;
+    }
+    .ext-links li:nth-child(4){
+        grid-area: awards;
+    }
+    .ext-links li:nth-child(5){
+        grid-area: hcm;
+    }
+    .ext-links li:nth-child(6){
+        grid-area: contact;
+    }
+}
+@media (min-width: 64em){
+    footer{
+        padding-block: 2.25em 0.5em;
+    }
+    .footer{
+        padding-inline: 5vw;
+        justify-content: space-around;
+        margin-block-end: 2.5em;
+    }
+    .ext-links{
+        text-align: start;
+    }
+    .ext-links ul {
+        font-size: clamp(0.9rem, 2vw, 1.2rem);
+    }
+}

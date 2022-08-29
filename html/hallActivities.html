@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Official website of Homi Jehangir Bhabha (HJB) Hall, Indian Institute of Technology Kharagpur, West Bengal. Get all news relating to hall activities or post a query or contact your alums."
+    />
+    <!--  Add more necessary meta tags      -->
+    <title>Homi Jehangir Bhabha Hall of Residence</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/png" />
+    <!--  Google fonts    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!--  icons library   -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      onload="this.rel='stylesheet'"
+    />
+    <!--  normalize.css   -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      onload="this.rel='stylesheet'"
+    />
+    <!--  style.css. Try to keep once css file per page -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- ################################ HEADER-HTML ###################################  -->
+    <header>
+      <div id="hall_name_logo">
+        <img
+          id="logo"
+          src="../assets/hallLogo.png"
+          alt="HJB-LOGO"
+          width="55px"
+          height="55px"
+        />
+        <div class="hall_name">
+          <h1 class="heading1" id="title">HOMI JEHANGIR BHABHA</h1>
+          <h2 class="heading2" id="subtitle">HALL OF RESIDENCE</h2>
+        </div>
+      </div>
+
+      <button class="btn" id="hamburger" title="menu">
+        <span class="bars" id="menuToggle"></span>
+      </button>
+
+      <nav class="hide">
+        <ul class="ulist">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./gallery.html">Gallery</a>
+          </li>
+          <li class="sub-ulist-li">
+            <a href="./hallActivities.html">Activities</a>
+            <span><i class="fa-solid fa-right-long"></i></span>
+            <ul class="sub-ulist activities_overlay">
+              <li><i class="fa-solid fa-left-long"></i></li>
+              <li><a href="./hallActivities.html">Sports & Games</a></li>
+              <li><a href="./hallActivities.html">Social & Cultural</a></li>
+              <li><a href="./hallActivities.html">Technology</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="./awards.html">Awards</a>
+          </li>
+          <li>
+            <a href="./hcm.html">HCM</a>
+          </li>
+          <li>
+            <a href="./contactUs.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ##################################### MAIN HTML ############################ -->
+    <main class="activities_main">
+        <section class="activities_section">
+            <div class="activity_heading">
+                <h1>activities</h1>
+            </div>
+            <div class="activity_dropdown">
+               <div class="event_dropdown show_dropDown" id="activity_event_dropdown1">
+                  <ul  onClick="socialFunction()">
+                    <li>social & cultural</li>
+                    <li class="link"><i class="fa-solid fa-caret-down"></i></li>
+                  </ul>
+                  <ul class="event_dropdown_content" id="social_dropdown">
+                    <li><a href="#dance_dramatics_section">DANCE AND DRAMATICS</a></li>
+                    <li><a href="#music_section">MUSIC</a></li>
+                    <li><a href="#fine_art_section">FINE ARTS AND DESIGN</a></li>
+                    <li><a href="#literary_section">LITERARY</a></li>
+                    <li><a href="#film_photography_section">FILM AND PHOTOGRAPHY</a></li>
+                    <li><a href="https://drive.google.com/file/d/1nc9S7JW4j9FmlBy0s9N6-3OfBagNzeNW/view" target="_blank">Rule Book</a></li>
+                  </ul>
+               </div>
+               <div class="event_dropdown" id="activity_event_dropdown2">
+                  <ul onClick="technologyFunction()">
+                    <li>technology</li>
+                    <li class="link"><i class="fa-solid fa-caret-down"></i></li>
+                  </ul>
+                  <ul class="event_dropdown_content" id="technology_dropdown">
+                    <li><a href="#knowledge_cup_section">KNOWLEDGE CUP</a></li>
+                    <li><a href="#application_cup_section">APPLICATION CUP</a></li>
+                    <li><a href="#innovation_cup_section">INNOVATION CUP</a></li>
+                    <li><a href="#strategy_cup_section">STRATEGY CUP</a></li>
+                    <li><a href="https://drive.google.com/file/d/17pQ02xw0s4w4TNo6yZEFgG2ni7NECwlp/view" target="_blank">Rule Book</a></li>
+                  </ul>
+               </div>
+               <div class="event_dropdown" id="activity_event_dropdown3">
+                  <ul onClick="sportsFunction()">
+                    <li>sports & games</li>
+                    <li class="link"><i class="fa-solid fa-caret-down"></i></li>
+                  </ul>
+                  <ul class="event_dropdown_content" id="sports_dropdown">
+                    <li><a href="#athletics_section">ATHLETICS</a></li>
+                    <li>CRICKET</li>
+                    <li>VOLLEYBALL</li>
+                    <li>WEIGHTLIFTING</li>
+                    <li>LAWN TENNIS</li>
+                    <li>HOCKEY</li>
+                    <li>BADMINTON</li>
+                    <li>TABLE TENNIS</li>
+                    <li>CHESS</li>
+                    <li>BRIDGE</li>
+                    <li>SQUASH</li>
+                    <li>SWIMMING</li>
+                    <li>WATER POLO</li>
+                    <li>FOOTBALL</li>
+                    <li>BASKETBALL</li>
+                    <li><a href="https://drive.google.com/file/d/1q6fiVehAZo6BAFTekXzkj8RUUvp1oFNO/view" target="_blank">Rule Book</a></li>
+                  </ul>
+               </div>
+               <div class="event_dropdown" id="activity_event_dropdown4">
+                <ul onClick="gymkhanaFunction()">
+                  <li>gymkhana</li>
+                  <li class="link"><i class="fa-solid fa-caret-down"></i></li>
+                </ul>
+
+                <ul class="event_dropdown_content" id="gymkhana_dropdown">
+                  <li><a href="https://gymkhana.iitkgp.ac.in/" target="_kgp">Visit Gymkhana Website</a></li>
+                </ul>
+               </div>
+            </div>
+        </section>
+        <section class="activities_content" id="activities_content">
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+                <ul  class="activity_image" >
+                  <img src="../assets/activity/stage_play.jpg" alt="">
+                </ul>
+                <ul class="activity_box_text">
+                    <li id="dance_dramatics_section">DANCE & DRAMATICS</li>
+                    <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+                </ul>
+            </div>
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+              <ul  class="activity_image" >
+                <img src="../assets/activity/music.jpg" alt="">
+              </ul>
+              <ul class="activity_box_text">
+                  <li id="music_section">MUSIC</li>
+                  <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+              </ul>
+            </div>
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+              <ul  class="activity_image" >
+                <img src="../assets/activity/fine_and_arts.jpg" alt="">
+              </ul>
+              <ul class="activity_box_text">
+                  <li id="fine_art_section">FINE ARTS & DESIGN</li>
+                  <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+              </ul>
+            </div>
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+              <ul  class="activity_image" >
+                <img src="../assets/activity/literary.jpg" alt="">
+              </ul>
+              <ul class="activity_box_text">
+                  <li id="literary_section">LITERARY</li>
+                  <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+              </ul>
+            </div>
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+              <ul  class="activity_image" >
+                <img src="../assets/activity/film_making.jpg" alt="">
+              </ul>
+              <ul class="activity_box_text">
+                  <li id="film_photography_section">FILM & PHOTOGRAPHY</li>
+                  <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+              </ul>
+            </div>
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+              <ul  class="activity_image" >
+                <img src="../assets/activity/knowledge_cup.jpg" alt="">
+              </ul>
+              <ul class="activity_box_text">
+                  <li id="knowledge_cup_section">KNOWLEDGE CUP</li>
+                  <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+              </ul>
+            </div>
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+              <ul  class="activity_image" >
+                <img src="../assets/activity/application_cup.jpg" alt="">
+              </ul>
+              <ul class="activity_box_text">
+                  <li id="application_cup_section">APPLICATION CUP</li>
+                  <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+              </ul>
+            </div>
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+              <ul  class="activity_image" >
+                <img src="../assets/activity/strategy_cup.jpg" alt="">
+              </ul>
+              <ul class="activity_box_text">
+                  <li id="strategy_cup_section">STRATEGY CUP</li>
+                  <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+              </ul>
+            </div>
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+              <ul  class="activity_image" >
+                <img src="../assets/activity/innocvation_cup.jpg" alt="">
+              </ul>
+              <ul class="activity_box_text">
+                  <li id="innovation_cup_section">INNOVATION CUP</li>
+                  <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+              </ul>
+            </div>
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+              <ul  class="activity_image" >
+                <img src="../assets/activity/athletics.jpg" alt="">
+              </ul>
+              <ul class="activity_box_text">
+                  <li id="athletics_section">ATHLETICS</li>
+                  <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+              </ul>
+            </div>
+            <div class="activity_box activity_box_dance_and_dramatics" id="">
+              <ul  class="activity_image" >
+                <img src="../assets/activity/gymkhana.jpg" alt="">
+              </ul>
+              <ul class="activity_box_text">
+                  <li id="gymkhana_section">GYMKHANA</li>
+                  <li><a class="know_more_link" href="#">KNOW MORE</a></li>
+              </ul>
+            </div>  
+        </section>
+    </main>
+
+    <!--  ################################# FOOTER-HTML ############################ -->
+    <footer>
+      <div class="footer">
+        <div class="ext-links">
+          <h2>QUICK LINKS</h2>
+          <ul>
+            <li><a href="./">HOME</a></li>
+            <li><a href="./gallery.html">GALLERY</a></li>
+            <li><a href="./hallActivities.html">ACTIVITIES</a></li>
+            <li><a href="./awards.html">AWARDS</a></li>
+            <li><a href="./hcm.html">HCM</a></li>
+            <li><a href="./contactUs.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="social-media-contacts">
+          <div class="logo-and-name">
+            <img
+              src="../assets/hallLogo.png"
+              width="116px"
+              height="116px"
+              alt="HJB-LOGO"
+            />
+            <div class="hall-name">
+              <p>HOMI JEHANGIR BHABHA</p>
+              <p>HALL OF RESIDENCE</p>
+            </div>
+          </div>
+          <div class="social-media-icons">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/company/hjb-iitkgp/mycompany/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/homijehangirbhabha.iitkgp" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/HJB-IITKGP" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; Created and maintained by HJB Web Development Team
+      </p>
+    </footer>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/activity.js"></script>
+  </body>
+</html>

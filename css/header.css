@@ -1,0 +1,49 @@
+@import url(navbar.css);
+@import url(hamburger.css);
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    background-color: black;
+    color: #fff;
+    position: sticky;
+    inset-block-start:0;
+    z-index:1;
+}
+
+/* ##################################### HALL-NAME-LOGO-STYLE ################################## */
+
+#hall_name_logo {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+#hall_name_logo .hall_name {
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+
+.hall_name .heading1 {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: bolder;
+}
+
+.hall_name .heading2 {
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+#logo {
+    max-width: 100%;
+}
+
+@media (max-width:700px){
+    .hall_name .heading1{
+        font-size:0.7em;
+    }
+}

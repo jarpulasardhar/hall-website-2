@@ -1,0 +1,153 @@
+.hide{
+  display: none;
+}
+
+nav{
+  position: absolute;
+  inset-block-start: 71px;
+  /* 71px is the height of the header. */
+  inset-inline: 50% 0;
+  z-index: 1;
+}
+
+/*########################### HAMBURGER ANIMATION #######################################*/
+
+.ulist{
+  background-color: black;
+  padding-inline: 1.5em;
+  list-style-type: none;
+  /* height:360px; */
+}
+
+.ulist li{
+  padding-block:0.5em;
+}
+
+.sub-ulist-li span{
+  float: inline-end;
+  cursor: pointer;
+}
+
+.ulist > li > a{
+  font-size:1em;
+  color:#fff;
+  text-decoration: none;
+}
+
+:where(.ulist, .activities_overlay, .awards_overlay) li:active{
+  background: linear-gradient(270deg, rgba(153, 14, 14, 0.8) 0%, rgba(103, 10, 10, 0.479392) 52.06%, rgba(0, 0, 0, 0) 100%);
+}  
+
+/* ############################################## OVERLAY STYLES ############################################# */
+
+.sub-ulist{
+  display:none;
+}
+
+.overlay{
+  background-color: rgb(91, 34, 34);
+  padding-inline:1.5em;
+  list-style-type: none;
+  /* height:360px; */
+}
+
+.overlay>li{
+  padding-block: 0;
+}
+
+.overlay>li>a, .overlay>li>span{
+  display: none;
+}
+/* ################################ ACTIVITIES AND AWARDS SUB ULIST ANIMATION ############################### */
+
+.activities_overlay, .awards_overlay{ 
+  list-style-type: none;
+}
+
+:where(.activities_overlay, .awards_overlay) li{
+  padding-block: 0.5em;
+}
+
+:where(.activities_overlay, .awards_overlay) > li > i{
+  cursor: pointer;
+}
+
+:where(.activities_overlay, .awards_overlay) > li > a{
+  color:#fff;
+  text-decoration: none;
+}
+
+@media (min-width:51em){
+  nav{
+    position: relative;
+    inset: auto;
+  }
+  .hide{
+    display:block;
+  }
+  :is(.ulist, .overlay){
+    background-color: black;
+    padding-inline: 0;
+    display:flex;
+    column-gap: 0.25em;
+    align-items: center;
+  }
+
+  :is(.ulist, .overlay) li{
+    font-size: 1.1rem;
+    border-radius:0.3rem; 
+  }
+
+  :is(.ulist, .overlay) li :where(a:hover, a:focus-visible) {
+    /* background-color:black; */
+    background: linear-gradient(263.32deg, rgba(248, 5, 5, 0.5) 1.55%, rgba(255, 12, 12, 0.3) 69.83%, rgba(252, 175, 175, 0) 97.26%);
+
+    border-radius: 5px;
+  }
+
+  :is(.ulist, .overlay)>li{
+    padding: 0;
+  }
+
+  :is(.ulist, .overlay) li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.45em;
+    width: 100%;
+  }
+  :where(.ulist, .overlay, .activities_overlay, .awards_overlay) a:active{
+    background: linear-gradient(270deg, rgba(153, 14, 14, 0.8) 0%, rgba(103, 10, 10, 0.479392) 52.06%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .sub-ulist-li {
+    position: relative;
+    text-align:center;
+  }
+
+  :where(.sub-ulist-li:hover, .sub-ulist-li:focus-within) .sub-ulist{
+    display: block;
+  }
+  
+  .sub-ulist-li li {
+    font-size:0.8rem;
+  }
+
+  .sub-ulist-li :where(span, li:first-child){
+    display: none;
+  }
+
+  :where(.activities_overlay, .awards_overlay) {
+    position: absolute;
+    inset-inline: -50%;
+    inset-block-start: 2.1em;
+    /* background:rgb(100, 99, 99);  */
+    background:black; 
+    border-radius:5px;
+  }
+
+  :is(.activities_overlay, .awards_overlay) li a{
+    white-space: nowrap;
+    width:100%;
+  }
+}

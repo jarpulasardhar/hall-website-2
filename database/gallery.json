@@ -1,0 +1,75 @@
+{
+    "2022": {
+        "farewell":{
+            "title": "Farewell Programme",
+            "data": [
+                {
+                    "src": "../assets/Farewell/DSC_0378.JPG",
+                    "alt": "farewell-party"
+                },
+                {
+                    "src": "../assets/Farewell/DSC_0387.JPG",
+                    "alt": "farewell-party"
+                },
+                {
+                    "src": "../assets/Farewell/DSC_0398.JPG",
+                    "alt": "farewell-party"
+                },
+                {
+                    "src": "../assets/Farewell/DSC_0402.JPG",
+                    "alt":"farewell-party"
+                },
+                {
+                    "src": "../assets/Farewell/DSC_0438.JPG",
+                    "alt": "farewell-party"
+                }
+            ]
+        },
+        "republic": {
+            "title": "Republic Day",
+            "data": [
+                {
+                    "src": "../assets/Republic Day/DSC_0094.JPG",
+                    "alt": "republic-day"
+                },
+                {
+                    "src": "../assets/Republic Day/DSC_0095.JPG",
+                    "alt": "republic-day"
+                },
+                {
+                    "src": "../assets/Republic Day/DSC_0100.JPG",
+                    "alt": "republic-day"
+                },
+                {
+                    "src": "../assets/Republic Day/DSC_0102.JPG",
+                    "alt": "republic-day"
+                },
+                {
+                    "src": "../assets/Republic Day/DSC_0104.JPG",
+                    "alt":"republic-day"
+                }
+            ]
+        },
+        "cricket": {
+            "title": "Intra-Hall Cricket",
+            "data": [
+                {
+                    "src": "../assets/Intra-Hall Cricket/DSC_0002.JPG",
+                    "alt": "intrahall-cricket"
+                },
+                {
+                    "src": "../assets/Intra-Hall Cricket/DSC_0065.JPG",
+                    "alt": "intrahall-cricket"
+                },
+                {
+                    "src": "../assets/Intra-Hall Cricket/DSC_0203.JPG",
+                    "alt": "intrahall-cricket"
+                },
+                {
+                    "src": "../assets/Intra-Hall Cricket/DSC_0665.JPG",
+                    "alt": "intrahall-cricket"
+                }
+            ]
+        }
+    }
+}

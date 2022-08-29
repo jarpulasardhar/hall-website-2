@@ -1,0 +1,91 @@
+/* ############################ MENU-TOGGLE-STYLE ################################ */
+
+/* Don't use absolute positioning, no need for it except in pseudo elements. */
+
+.btn {
+    background-color:transparent;
+    border-style:none;
+    z-index:100;
+    position:absolute;
+    top:50%;
+    right:16px;
+    transform:translateY(-50%);
+}
+
+.btn {
+    padding-block: 10px;
+    padding-inline:2px;
+}
+
+.btn .bars {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.btn .bars::before,
+.btn .bars::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.btn .bars,
+.btn .bars::before,
+.btn .bars::after {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn .bars::before {
+    bottom: 8px;
+}
+
+.btn .bars::after {
+    top: 8px;
+} 
+
+.btn:hover{
+    cursor: pointer;
+}
+/*  ############################# CLOSE_ICON-STYLE ################################### */
+
+.btn .closeIcon {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.btn .closeIcon::before,
+.btn .closeIcon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.btn .closeIcon,
+.btn .closeIcon::before{
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn .closeIcon{
+    transform:rotate(135deg);
+}
+
+.btn .closeIcon::before {
+    transform:rotate(-90deg);
+} 
+
+/* ######################## Media Query for Desktop view ######################### */
+
+@media (min-width:51em){
+    .btn{
+        display: none;
+    }
+  }
